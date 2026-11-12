@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
 Route::get('/api/github-repos', [PortfolioController::class, 'fetchRepos'])->name('portfolio.repos');
 
+Route::get('/dashboard', fn () => redirect()->route('admin.dashboard'))
+    ->middleware(['auth'])
+    ->name('dashboard');
+
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', [ProjectController::class, 'index'])->name('dashboard');
     Route::get('/projects/data', [ProjectController::class, 'datatable'])->name('projects.data');
