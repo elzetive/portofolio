@@ -23,7 +23,6 @@
                               linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
             background-size: 36px 36px;
         }
-        /* Sudut asimetris khas modern tech card */
         .asymmetric-photo {
             border-radius: 1.5rem 4rem 1.5rem 1.5rem;
         }
@@ -52,7 +51,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative overflow-hidden py-16 lg:py-24">
-        <!-- Ambient Glow Background -->
         <div class="absolute top-1/4 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -99,11 +97,9 @@
 
             <!-- Sisi Kanan (Visual Frame Foto Ekstra Besar & Asimetris) -->
             <div class="lg:col-span-6 flex justify-center lg:justify-end relative">
-                <!-- Ornamen Sudut Cyber -->
                 <div class="absolute -top-3 -left-3 w-12 h-12 border-t-2 border-l-2 border-emerald-500/50 rounded-tl-xl pointer-events-none"></div>
                 <div class="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-emerald-500/50 rounded-br-xl pointer-events-none"></div>
 
-                <!-- Pixel Glitch Accents -->
                 <div class="hidden sm:flex flex-col gap-1.5 absolute -left-6 top-1/3 pointer-events-none">
                     <span class="w-6 h-1 bg-emerald-400/70"></span>
                     <span class="w-3 h-1 bg-teal-400/50 ml-3"></span>
@@ -111,7 +107,6 @@
                 </div>
 
                 <div class="relative w-full max-w-[430px] rounded-3xl bg-[#181c22]/95 border border-emerald-500/30 p-6 flex flex-col justify-between gap-5 glow-emerald overflow-hidden group">
-                    <!-- Top Bar Status -->
                     <div class="flex items-center justify-between z-10">
                         <span class="px-3.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono-code text-[11px] flex items-center gap-2">
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
@@ -124,7 +119,6 @@
                         </div>
                     </div>
 
-                    <!-- Container Foto Profil Utama -->
                     <div class="relative w-full aspect-square asymmetric-photo bg-gradient-to-tr from-emerald-500/40 via-teal-400/20 to-emerald-500/40 p-[2px] overflow-hidden">
                         <div class="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-[#111418]/85 backdrop-blur border border-gray-800 font-mono-code text-[10px] text-emerald-400 z-10 select-none">
                             &lt;dev /&gt;
@@ -134,7 +128,6 @@
                              class="w-full h-full asymmetric-photo object-cover object-top group-hover:scale-[1.03] transition-transform duration-500">
                     </div>
 
-                    <!-- Identitas & Tech Stack -->
                     <div class="space-y-4 z-10">
                         <div class="text-center">
                             <h2 class="font-extrabold text-2xl text-white tracking-tight">{{ $profile['name'] }}</h2>
@@ -158,7 +151,7 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section (From Database) -->
+    <!-- Featured Projects Section -->
     <section id="portfolio" class="py-20 bg-[#15191f]/90 border-y border-gray-800/80">
         <div class="max-w-6xl mx-auto px-6">
             <div class="mb-12">
